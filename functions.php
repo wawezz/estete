@@ -31,7 +31,7 @@ function property_custom_post_type() {
 		'label'               => __('properties', 'estete-theme'),
 		'description'         => __('Property records', 'estete-theme'),
 		'labels'              => $labels,
-		'supports'            => array('title', 'editor', 'author', 'revisions', 'custom-fields'),
+		'supports'            => array('title', 'editor', 'author', 'revisions'),
 		'public'              => true,
 		'hierarchical'        => false,
 		'show_ui'             => true,
