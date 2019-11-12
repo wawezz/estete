@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <? wp_nav_menu( [
+    <?php wp_nav_menu( [
         'theme_location'  => '',
         'menu'            => 'footer_menu', 
         'container'       => 'div', 
@@ -17,9 +17,9 @@
         'depth'           => 0,
         'walker'          => '',
     ] ) ?>
-    <p><?bloginfo('name')?></p>
+    <p><?php bloginfo('name')?></p>
 </footer>
  
-<?wp_footer()?>
+<?php wp_footer()?>
 </body>
 </html>
