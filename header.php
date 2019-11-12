@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <? language_attributes(); ?>>
+<html <?language_attributes()?>>
  
 <head>
     <meta charset="<?bloginfo('charset')?>">
@@ -19,7 +19,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <? wp_nav_menu( [
+            <? wp_nav_menu([
                 'theme_location'  => '',
                 'menu'            => 'header_menu', 
                 'container'       => 'div', 
@@ -36,7 +36,7 @@
                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'depth'           => 0,
                 'walker'          => '',
-            ] ) ?>
+            ]) ?>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -51,7 +51,7 @@
                     <a class="nav-link" href="#">Opinions</a>
                 </li>
             </ul>
-            <? wp_nav_menu( [
+            <? wp_nav_menu([
                 'theme_location'  => '',
                 'menu'            => 'social_menu', 
                 'container'       => 'div', 
@@ -68,7 +68,7 @@
                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'depth'           => 0,
                 'walker'          => '',
-            ] ) ?>
+            ]) ?>
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
                     <a href="https://www.facebook.com/" class="nav-link"><i class="fab fa-facebook-f"></i></a>
