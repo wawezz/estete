@@ -13,3 +13,5 @@ function after_setup() {
 }
 
 add_action('after_setup_theme', 'after_setup');
+
+?>
