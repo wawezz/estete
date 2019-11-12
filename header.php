@@ -14,7 +14,7 @@
  
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-        <a class="navbar-brand" href="<? echo home_url()?>"><strong><?php bloginfo('name')?></strong></a>
+        <a class="navbar-brand" href="<?php echo home_url()?>"><strong><?php bloginfo('name')?></strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
