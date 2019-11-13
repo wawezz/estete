@@ -3,11 +3,11 @@
     <div class="row filter mb-2">
         <div class="col-12 justify-content-end">
             <i class="fas fa-filter filter-icon"></i>
-            <div class="jumbotron filter-body">
+            <div class="jumbotron filter-body flex-column">
                 <h3 class="mb-3">
                     <?php _e('Filter by City', 'estete-theme')?>
                 </h3>
-                <select class="custom-select" multiple>
+                <select class="filter-city custom-select" multiple>
                     <?php
                         $terms = get_terms(array(
                             'taxonomy' => 'cities',
