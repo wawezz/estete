@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header()?>
 <div class="container p-3">
     <header class="jumbotron my-4">
         <h1 class="display-3"><?php _e('A Warm Welcome!', 'estete-theme')?></h1>
@@ -14,19 +14,23 @@
             'posts_per_page' => -1            
             );              
 
-        $the_query = new WP_Query( $args );
-        if($the_query->have_posts() ) : 
-            while ( $the_query->have_posts() ) : 
+        $the_query = new WP_Query($args);
+        if($the_query->have_posts()) : 
+            while ($the_query->have_posts()) : 
                 $the_query->the_post(); ?>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card h-100">
-                        <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+                        <?php if (has_post_thumbnail()) :
+                            the_post_thumbnail('medium');
+                        else :
+                            echo '<img src="'.get_template_directory_uri().'/images/no-image.png" />';
+                        endif; ?>
                         <div class="card-body">
                             <h4 class="card-title"><?php the_title()?></h4>
                             <p class="card-text"><?php the_excerpt()?></p>
                         </div>
                         <div class="card-footer">
-                            <a href="<?php the_permalink() ?>" class="btn btn-primary">Find Out More!</a>
+                            <a href="<?php the_permalink()?>" class="btn btn-primary"><? _e('more', 'estete-theme')?></a>
                         </div>
                     </div>
                 </div>
@@ -37,4 +41,4 @@
         ?>
     </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer()?>
