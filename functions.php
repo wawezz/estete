@@ -123,6 +123,8 @@ function get_proporties_ajax() {
         echo '<div class="col-12">'.__('There are no posts!', 'estete-theme').'</div>';
     endif;
     wp_reset_postdata();
+
+    die();
 }
 
 add_action('init', 'add_custom_post_types_and_taxonomies');
