@@ -8,7 +8,7 @@
         <div class="card-body">
             <h4 class="card-title"><?php the_title()?></h4>
             <p class="card-text"><?php the_excerpt()?></p>
-            <div class="p-1">
+            <div class="p-1 font-weight-bold mt-2">
                 <?php
                     $terms = get_the_terms( get_the_ID(), 'cities' );
                                 
