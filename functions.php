@@ -89,3 +89,5 @@ add_action('init', 'add_custom_post_types_and_taxonomies');
 add_action('wp_enqueue_scripts', 'custom_theme_assets');
 add_action('after_setup_theme', 'after_setup');
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+add_theme_support('post-thumbnails'); 
