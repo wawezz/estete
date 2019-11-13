@@ -37,7 +37,7 @@
 
   if ($(".posts-list-wrapper")) {
     var ptype = $(".posts-list-wrapper").data("ptype");
-    console.log(ptype);
+    console.log($(".posts-list-wrapper").attr());
     if (ptype == "properties") {
       console.log(2);
       getProperties();
