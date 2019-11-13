@@ -35,7 +35,7 @@
     });
   }
 
-  var wrapper = $(document + " .posts-list-wrapper");
+  var wrapper = $(".posts-list-wrapper");
 
   if (wrapper) {
     var ptype = wrapper.data("ptype");
