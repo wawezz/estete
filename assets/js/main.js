@@ -24,7 +24,7 @@
                 action: 'get_proporties_ajax'
             },
             success: function (data) {
-                // $(".properties-list").html(data);
+                $(".properties-list").html(data);
                 filter.prop('disabled', false);
             },
             error: function (jqXHR, textStatus, errorThrown) {
