@@ -29,7 +29,7 @@ function property_custom_post_type() {
 		'label'               => __('properties', 'estete-theme'),
 		'description'         => __('Property records', 'estete-theme'),
 		'labels'              => $labels,
-		'supports'            => array('title', 'editor', 'author', 'revisions'),
+		'supports'            => array('title', 'editor', 'author', 'thumbnail', 'revisions'),
 		'public'              => true,
 		'hierarchical'        => false,
 		'show_ui'             => true,
@@ -82,7 +82,7 @@ function add_custom_post_types_and_taxonomies() {
 }
 
 function custom_excerpt_length( $length = 20 ) {
-    return $length;
+    return 20;
 }
 
 add_action('init', 'add_custom_post_types_and_taxonomies');
