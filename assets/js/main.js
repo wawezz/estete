@@ -35,9 +35,11 @@
     });
   }
 
-  if ($(".posts-list-wrapper")) {
-    var ptype = $(".posts-list-wrapper").data("ptype");
-    console.log($(".posts-list-wrapper").attr());
+  var wrapper = $(document + " .posts-list-wrapper");
+
+  if (wrapper) {
+    var ptype = wrapper.data("ptype");
+    console.log(ptype);
     if (ptype == "properties") {
       console.log(2);
       getProperties();
