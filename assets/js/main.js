@@ -39,7 +39,7 @@
 
   if (wrapper) {
     var ptype = wrapper.data("ptype");
-    console.log(ptype);
+    console.log($(".posts-list-wrapper").data("ptype"));
     if (ptype == "properties") {
       console.log(2);
       getProperties();
