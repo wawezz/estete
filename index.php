@@ -32,7 +32,9 @@
 </div>
 
 <script>
-    getProperties();
+    (function($) {
+        getProperties();
+    })(jQuery);
 </script>
 
 <?php get_footer()?>
