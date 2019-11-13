@@ -12,7 +12,7 @@
         var filter = $(".filter-city");
 
         filter.prop('disabled', 'disabled');
-
+        $(".loading-spin").show();
         var cities = filter.val();
 
         $.ajax({
@@ -26,10 +26,12 @@
             success: function (data) {
                 $(".properties-list").html(data);
                 filter.prop('disabled', false);
+                $(".loading-spin").hide();
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
                 filter.prop('disabled', false);
+                $(".loading-spin").hide();
             }
         });
     }
