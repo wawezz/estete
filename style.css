@@ -12,10 +12,15 @@ body {
 .navbar-nav a {
     display: block;
     padding: .5rem 1rem;
+    text-decoration: none;
 }
 
 .navbar-dark .navbar-nav a {
     color: rgba(255, 255, 255, .5);
+}
+
+.navbar-dark .navbar-nav a:hover {
+    color: rgba(255, 255, 255, .8);
 }
 
 .navbar-dark .navbar-nav .current-menu-item>a {
