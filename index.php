@@ -33,6 +33,7 @@
 
 <script>
 (function () {
+    console.log(123);
     getProperties();
 });
 </script>
