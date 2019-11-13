@@ -5,9 +5,7 @@ function custom_theme_assets() {
 
 function add_menu_support() {
     register_nav_menus([
-		'header_menu' => __('Header menu', 'estete-theme'),
-        'footer_menu' => __('Footer menu', 'estete-theme'),
-        'social_menu' => __('Social menu', 'estete-theme')
+		'header_menu' => __('Header menu', 'estete-theme')
 	]);
 }
 
