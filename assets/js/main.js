@@ -1,7 +1,7 @@
 (function ($) {
     var filter = [];
-
-    $(".filter-icon").on("click", function () {
+    console.log($)
+    $(document).on("click", ".filter-icon", function () {
         $(".filter").toogleClass("active");
     });
 })(jQuery);
