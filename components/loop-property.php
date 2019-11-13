@@ -8,25 +8,25 @@
         <div class="card-body">
             <h4 class="card-title"><?php the_title()?></h4>
             <p class="card-text"><?php the_excerpt()?></p>
+            <div class="p-1">
+                <?php
+                    $terms = get_the_terms( get_the_ID(), 'cities' );
+                                
+                    if ( $terms && ! is_wp_error( $terms ) ) : 
+
+                        $cities_links = array();
+
+                        foreach ($terms as $term) {
+                            $cities_links[] = $term->name;
+                        }
+                        
+                        echo implode(", ", $cities_links);
+
+                    endif; ?>
+            </div>
         </div>
         <div class="card-footer">
             <a href="<?php the_permalink()?>" class="btn btn-primary"><?php _e('more', 'estete-theme')?></a>
-        </div>
-        <div class="p-2">
-            <?php
-                $terms = get_the_terms( get_the_ID(), 'cities' );
-                         
-                if ( $terms && ! is_wp_error( $terms ) ) : 
- 
-                    $cities_links = array();
- 
-                    foreach ($terms as $term) {
-                        $cities_links[] = $term->name;
-                    }
-                    
-                    echo implode(", ", $cities_links);
- 
-                endif; ?>
         </div>
     </div>
 </div>

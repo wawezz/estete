@@ -9,7 +9,8 @@
                     echo '<img src="'.get_template_directory_uri().'/assets/images/no-image.jpg" class="wp-post-image" />';
                 endif; ?>
             </div>
-            <div class="font-bold">
+            <h2><a href="<?php the_permalink()?>" class="text-dark"><?php the_title()?></a></h2>
+            <div class="font-weight-bold mb-4">
                 <?php
                     $terms = get_the_terms( get_the_ID(), 'cities' );
                             
@@ -25,7 +26,6 @@
     
                     endif; ?>
             </div>
-            <h2 class="mb-4"><a href="<?php the_permalink()?>" class="text-dark"><?php the_title()?></a></h2>
             <?php the_content()?>
         
         <?php endwhile;

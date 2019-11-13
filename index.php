@@ -11,7 +11,7 @@
                     <?php
                         $terms = get_terms(array(
                             'taxonomy' => 'cities',
-                            'hide_empty' => false,
+                            'hide_empty' => true,
                         ));
 
                         foreach($terms as $term){
