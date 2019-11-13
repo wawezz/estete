@@ -1,6 +1,8 @@
 <?php
 function custom_theme_assets() {
-	wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script ("main", get_stylesheet_directory_uri() . "/assets/js/main.js", array('jquery')); 
+    wp_localize_script('main', 'the_ajax_script', array('ajaxurl' => admin_url('admin-ajax.php')));
 }
 
 function add_menu_support() {
