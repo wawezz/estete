@@ -23,10 +23,8 @@
                     foreach ($terms as $term) {
                         $cities_links[] = $term->name;
                     }
-                         
-                    $on_cities = join(", ", $cities_links);
                     
-                    printf(esc_html__('cities: <span>%s</span>', 'estete-theme'), esc_html($on_cities));
+                    echo __('cities', 'estete-theme').': '.implode(", ", $cities_links);
  
                 endif; ?>
         </div>
