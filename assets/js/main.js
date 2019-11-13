@@ -5,9 +5,15 @@
     });
 
     $(document).on("change", ".filter-city", function () {
-        $(this).prop('disabled', 'disabled');
+        getProperties();
+    });
 
-        var cities = $(this).val();
+    function getProperties() {
+        var filter = $(".filter-city");
+
+        filter.prop('disabled', 'disabled');
+
+        var cities = filter.val();
 
         $.ajax({
             type: "POST",
@@ -18,14 +24,15 @@
                 action: 'get_proporties_ajax'
             },
             success: function (data) {
-                console.log(data);
+                $(".properties-list").html(data);
+                filter.prop('disabled', false);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+                filter.prop('disabled', false);
             }
-
         });
+    }
 
-        $(this).prop('disabled', false);
-    });
+    getProperties();
 })(jQuery);

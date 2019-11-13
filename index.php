@@ -24,47 +24,14 @@
             </div>
         </div>
     </div>
-    <div class="row text-center">
-        <?php 
-        $args = array(
-            'post_type'=> 'properties',
-            'tax_query' => array(
-                array (
-                    'taxonomy' => 'cities',
-                    'field' => 'slug',
-                    'terms' => 'detroit',
-                )
-            ),
-            'orderby'        => 'name',
-            'order'    => 'ASC',
-            'posts_per_page' => -1       
-            );              
-
-        $the_query = new WP_Query($args);
-        if($the_query->have_posts()) : 
-            while ($the_query->have_posts()) : 
-                $the_query->the_post(); ?>
-                <div class="card-wrapp col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <?php if (has_post_thumbnail()) :
-                            the_post_thumbnail('medium');
-                        else :
-                            echo '<img src="'.get_template_directory_uri().'/assets/images/no-image.jpg" class="wp-post-image" />';
-                        endif; ?>
-                        <div class="card-body">
-                            <h4 class="card-title"><?php the_title()?></h4>
-                            <p class="card-text"><?php the_excerpt()?></p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="<?php the_permalink()?>" class="btn btn-primary"><?php _e('more', 'estete-theme')?></a>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile;
-        else :
-            echo '<div class="col-12">'.__('There are no posts!', 'estete-theme').'</div>';
-        endif;
-        ?>
+    <div class="row text-center properties-list">
     </div>
 </div>
+
+<script>
+(function () {
+    getProperties();
+});
+</script>
+
 <?php get_footer()?>
