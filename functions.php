@@ -120,7 +120,7 @@ function get_proporties_ajax() {
             get_template_part('components/loop', 'property');
         endwhile;
     else :
-        echo '<div class="col-12">'.__('There are no posts!', 'estete-theme').'</div>';
+        echo '<div class="col-12 mb-2">'.__('There are no posts!', 'estete-theme').'</div>';
     endif;
     wp_reset_postdata();
 
