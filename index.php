@@ -1,11 +1,14 @@
 <?php get_header()?>
 <div class="container p-3">
-    <div class="row filter">
+    <div class="row filter mb-2">
         <div class="col-12 justify-content-end">
             <i class="fas fa-filter filter-icon"></i>
             <div class="jumbotron filter-body">
-                <select>
-                    <option>city</option>
+                <select class="custom-select" multiple>
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                 </select>
             </div>
         </div>
