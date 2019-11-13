@@ -36,7 +36,7 @@
   }
 
   if ($(".posts-list-wrapper")) {
-    var type = $(".posts-list-wrapper").data("type");
+    var type = $(".posts-list-wrapper").data();
     console.log(type);
     if (type == "properties") {
       console.log(2);
