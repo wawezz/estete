@@ -27,7 +27,7 @@
     <div class="loading-spin mb-2">
         <i class="fas fa-spinner fa-spin"></i>
     </div>
-    <div class="row text-center properties-list posts-list-wrapper" data-type="properties">
+    <div class="row text-center properties-list posts-list-wrapper" data-ptype="properties">
     </div>
 </div>
 

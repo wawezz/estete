@@ -36,9 +36,9 @@
   }
 
   if ($(".posts-list-wrapper")) {
-    var type = $(".posts-list-wrapper");
-    console.log(type);
-    if (type == "properties") {
+    var ptype = $(".posts-list-wrapper").data("ptype");
+    console.log(ptype);
+    if (ptype == "properties") {
       console.log(2);
       getProperties();
     }
