@@ -36,8 +36,12 @@
   }
 
   if ($(".posts-list-wrapper")) {
+    console.log(1);
     var type = $(".posts-list-wrapper").data("type");
 
-    if (type == "properties") getProperties();
+    if (type == "properties") {
+      console.log(2);
+      getProperties();
+    }
   }
 })(jQuery);
