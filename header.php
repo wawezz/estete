@@ -27,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <?php wp_nav_menu([
-                'theme_location'  => 'main',
+                'theme_location'  => 'header_menu',
                 'menu'            => '', 
                 'container'       => 'div', 
                 'container_class' => '', 
