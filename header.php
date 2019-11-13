@@ -30,7 +30,7 @@
                 'theme_location'  => 'header_menu',
                 'menu'            => '', 
                 'container'       => 'div', 
-                'container_class' => '', 
+                'container_class' => 'nav-item', 
                 'container_id'    => '',
                 'menu_class'      => 'collapse navbar-collapse', 
                 'menu_id'         => 'navbarResponsive',
