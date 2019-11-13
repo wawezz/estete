@@ -34,4 +34,10 @@
       }
     });
   }
+
+  if ($(".posts-list-wrapper")) {
+    var type = $(".posts-list-wrapper").data("type");
+
+    if (type == "properties") getProperties();
+  }
 })(jQuery);
