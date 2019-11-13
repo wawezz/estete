@@ -28,14 +28,14 @@
             </button>
             <?php wp_nav_menu([
                 'theme_location'  => '',
-                'menu'            => '', 
+                'menu'            => 'header_menu', 
                 'container'       => 'div', 
                 'container_class' => '', 
                 'container_id'    => '',
                 'menu_class'      => 'collapse navbar-collapse', 
                 'menu_id'         => 'navbarResponsive',
                 'echo'            => true,
-                'fallback_cb'     => 'header_menu',
+                'fallback_cb'     => 'wp_page_menu',
                 'before'          => '',
                 'after'           => '',
                 'link_before'     => '',
