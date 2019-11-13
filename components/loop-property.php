@@ -12,7 +12,7 @@
         <div class="card-footer">
             <a href="<?php the_permalink()?>" class="btn btn-primary"><?php _e('more', 'estete-theme')?></a>
         </div>
-        <div class="card-terms">
+        <div class="p-2">
             <?php
                 $terms = get_the_terms( get_the_ID(), 'cities' );
                          
@@ -24,7 +24,7 @@
                         $cities_links[] = $term->name;
                     }
                     
-                    echo __('cities', 'estete-theme').': '.implode(", ", $cities_links);
+                    echo implode(", ", $cities_links);
  
                 endif; ?>
         </div>
