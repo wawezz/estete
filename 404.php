@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="error-template">
+            <div class="error-template align-items-center d-flex flex-column mb-5">
                 <h1><?php _e('Oops!', 'estete-theme')?></h1>
                 <h2>
                     <?php _e('404 Not Found', 'estete-theme')?>
@@ -10,7 +10,7 @@
                 <div class="error-details">
                     <?php _e('Sorry, an error has occured, Requested page not found!', 'estete-theme')?>
                 </div>
-                <div class="error-actions">
+                <div class="error-actions mt-2">
                     <a href="/" class="btn btn-primary btn-lg">
                         <i class="fas fa-home"></i>
                         <?php _e('Take Me Home', 'estete-theme')?>
