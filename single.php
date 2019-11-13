@@ -2,7 +2,7 @@
 <div class="container p-3">
     <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
-                <div class="flex mb-6">
+                <div class="d-flex justify-content-center mb-5">
                     <?php if (has_post_thumbnail()) :
                         the_post_thumbnail('large');
                     else :
