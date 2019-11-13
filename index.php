@@ -30,7 +30,7 @@
                             <p class="card-text"><?php the_excerpt()?></p>
                         </div>
                         <div class="card-footer">
-                            <a href="<?php the_permalink()?>" class="btn btn-primary"><? _e('more', 'estete-theme')?></a>
+                            <a href="<?php the_permalink()?>" class="btn btn-primary"><?php _e('more', 'estete-theme')?></a>
                         </div>
                     </div>
                 </div>
