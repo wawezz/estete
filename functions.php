@@ -41,7 +41,7 @@ function property_custom_post_type() {
 		'has_archive'         => true,
 		'can_export'          => true,
 		'exclude_from_search' => false,
-	    'yarpp_support'       => true,
+        'yarpp_support'       => true,
 		'taxonomies' 	      => array('cities'),
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post'
