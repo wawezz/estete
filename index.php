@@ -4,8 +4,8 @@
         <h2 class="display-4"><?php _e('A Warm Welcome!', 'estete-theme')?></h2>
         <p class="lead"><?php _e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.', 'estete-theme')?></p>
     </header>
-    <div class="row filter">
-        <i class="fas fa-filter"></i>
+    <div class="row filter text-right">
+        <i class="fas fa-filter display-4"></i>
     </div>
     <div class="row text-center">
         <?php 
