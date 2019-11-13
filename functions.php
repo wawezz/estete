@@ -81,7 +81,7 @@ function add_custom_post_types_and_taxonomies() {
     cities_properties_custom_taxonomy();
 }
 
-function custom_excerpt_length( $length = 20 ) {
+function custom_excerpt_length() {
     return 20;
 }
 
