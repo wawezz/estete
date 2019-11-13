@@ -22,7 +22,7 @@
                             <p class="card-text"><?php the_excerpt()?></p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
+                            <a href="<?php the_permalink() ?>" class="btn btn-primary">Find Out More!</a>
                         </div>
                     </div>
                 </div>
