@@ -12,9 +12,7 @@
                         ));
 
                         foreach($terms as $term){
-                            ?>
-                                <option value="<?php echo $term["slug"]?>"><?php echo $term["name"]?></option>
-                            <?php
+                            print_r($term);
                         }
                     ?>
                 </select>
