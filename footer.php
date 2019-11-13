@@ -1,6 +1,6 @@
         <footer class="py-5 bg-dark">
             <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; <?php bloginfo('name')?> <?php echo date('Y')?></p>
+                <p class="m-0 text-center text-white"><?php _e('Copyright', 'estete-theme')?> &copy; <?php bloginfo('name')?> <?php echo date('Y')?></p>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
