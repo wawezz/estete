@@ -32,6 +32,17 @@ body {
     height: auto;
 }
 
+.filter .filter-icon {
+    font-size: 25px;
+    color: #e8e8e8;
+    cursor: pointer;
+}
+
+.filter .filter-icon:hover,
+.filter.active .filter-icon {
+    color: #343940
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav a {
         padding-right: .5rem;
