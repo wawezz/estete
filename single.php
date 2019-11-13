@@ -3,7 +3,7 @@
     <?php if (have_posts()) :
         while (have_posts()) : the_post(); 
                 if (has_post_thumbnail()) :
-                    the_post_thumbnail('thumbnail');
+                    the_post_thumbnail('large');
                 else :
                     echo '<img src="'.get_template_directory_uri().'/images/no-image.jpg" class="wp-post-image" />';
                 endif; ?>

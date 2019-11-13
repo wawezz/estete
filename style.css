@@ -27,7 +27,7 @@ body {
     color: #fff;
 }
 
-.wp-post-image {
+.card-wrapp .wp-post-image {
     width: 100%;
     height: auto;
 }

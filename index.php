@@ -18,7 +18,7 @@
         if($the_query->have_posts()) : 
             while ($the_query->have_posts()) : 
                 $the_query->the_post(); ?>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card-wrapp col-lg-3 col-md-6 mb-4">
                     <div class="card h-100">
                         <?php if (has_post_thumbnail()) :
                             the_post_thumbnail('medium');
