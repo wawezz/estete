@@ -28,9 +28,9 @@
             </button>
             <?php wp_nav_menu([
                 'theme_location'  => '',
-                'menu'            => 'navbar-nav ml-auto', 
+                'menu'            => '', 
                 'container'       => 'div', 
-                'container_class' => '', 
+                'container_class' => 'navbar-nav ml-auto', 
                 'container_id'    => '',
                 'menu_class'      => 'collapse navbar-collapse', 
                 'menu_id'         => 'navbarResponsive',
