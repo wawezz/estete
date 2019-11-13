@@ -5,6 +5,7 @@
         $args = array(
             'post_type'=> 'properties',
         //    'areas'    => 'painting',
+            'orderby'        => 'name',
             'order'    => 'ASC',
             'posts_per_page' => -1            
             );              
