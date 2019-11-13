@@ -4,6 +4,15 @@
         <div class="col-12 justify-content-end">
             <i class="fas fa-filter filter-icon"></i>
             <div class="jumbotron filter-body">
+                <pre>
+                <?php
+                $terms = get_terms( array(
+                    'taxonomy' => 'cities',
+                    'hide_empty' => false,
+                ) );
+                print_r($terms)
+                ?>
+                                </pre>
                 <select class="custom-select" multiple>
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
