@@ -76,12 +76,16 @@ function cities_properties_custom_taxonomy() {
 function after_setup() {
     add_menu_support();
 }
-function add_custom_post_types_and_taxonomies()
-{
+function add_custom_post_types_and_taxonomies() {
     property_custom_post_type();
     cities_properties_custom_taxonomy();
+}
+
+function custom_excerpt_length( $length = 20 ) {
+    return $length;
 }
 
 add_action('init', 'add_custom_post_types_and_taxonomies');
 add_action('wp_enqueue_scripts', 'custom_theme_assets');
 add_action('after_setup_theme', 'after_setup');
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
