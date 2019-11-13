@@ -11,4 +11,4 @@
         echo '<p>There are no posts!</p>';
     endif; ?>
 </div>
-<?php get_footer(); ?>>
+<?php get_footer(); ?>
