@@ -1,14 +1,21 @@
 <?php get_header() ?>
 <div class="container p-3">
-    <?php if ( have_posts() ) :
-        while ( have_posts() ) : the_post(); ?>
-    
-            <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-            <?php the_content() ?>
-        
-        <?php endwhile;
+    <?php 
+    $args = array(
+        'post_type'=> 'properties',
+    //    'areas'    => 'painting',
+        'order'    => 'ASC'
+        );              
+
+    $the_query = new WP_Query( $args );
+    if($the_query->have_posts() ) : 
+        while ( $the_query->have_posts() ) : 
+            $the_query->the_post(); 
+            the_title();
+        endwhile;
     else :
         echo '<p>There are no posts!</p>';
-    endif; ?>
+    endif;
+    ?>
 </div>
 <?php get_footer(); ?>
