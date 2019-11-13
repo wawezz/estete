@@ -18,10 +18,16 @@
         <?php 
         $args = array(
             'post_type'=> 'properties',
-        //    'areas'    => 'painting',
+            'tax_query' => array(
+                array (
+                    'taxonomy' => 'cities',
+                    'field' => 'slug',
+                    'terms' => 'detroit',
+                )
+            ),
             'orderby'        => 'name',
             'order'    => 'ASC',
-            'posts_per_page' => -1            
+            'posts_per_page' => -1       
             );              
 
         $the_query = new WP_Query($args);
