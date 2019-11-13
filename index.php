@@ -1,13 +1,9 @@
 <?php get_header()?>
 <div class="container p-3">
-    <header class="jumbotron my-4">
-        <h2 class="display-4"><?php _e('A Warm Welcome!', 'estete-theme')?></h2>
-        <p class="lead"><?php _e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.', 'estete-theme')?></p>
-    </header>
     <div class="row filter">
         <div class="col-12 justify-content-end">
             <i class="fas fa-filter filter-icon"></i>
-            <div class="filter-body">
+            <div class="jumbotron filter-body">
                 <select>
                     <option>city</option>
                 </select>
