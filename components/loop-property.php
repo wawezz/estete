@@ -12,5 +12,23 @@
         <div class="card-footer">
             <a href="<?php the_permalink()?>" class="btn btn-primary"><?php _e('more', 'estete-theme')?></a>
         </div>
+        <div class="card-terms">
+            <?php
+                $terms = get_the_terms( get_the_ID(), 'cities' );
+                         
+                if ( $terms && ! is_wp_error( $terms ) ) : 
+ 
+                    $cities_links = array();
+ 
+                    foreach ($terms as $term) {
+                        $cities_links[] = $term->name;
+                    }
+                         
+                    $on_cities = join(", ", $cities_links);
+                    
+                    printf(esc_html__('cities: <span>%s</span>', 'estete-theme'), esc_html($on_cities));
+ 
+                endif; ?>
+        </div>
     </div>
 </div>
