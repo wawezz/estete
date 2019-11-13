@@ -9,7 +9,7 @@
                         echo '<img src="'.get_template_directory_uri().'/images/no-image.jpg" class="wp-post-image" />';
                     endif; ?>
                 </div>
-            <h2 class="text-dark mb-4"><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
+            <h2 class="mb-4"><a href="<?php the_permalink()?>" class="text-dark"><?php the_title()?></a></h2>
             <?php the_content()?>
         
         <?php endwhile;
