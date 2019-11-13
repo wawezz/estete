@@ -9,7 +9,7 @@
 })(jQuery);
 
 function getProperties() {
-  var filter = $(".filter-city");
+  var filter = jQuery(".filter-city");
 
   filter.prop("disabled", "disabled");
   jQuery(".loading-spin").show();
