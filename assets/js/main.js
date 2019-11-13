@@ -12,10 +12,10 @@ function getProperties() {
   var filter = $(".filter-city");
 
   filter.prop("disabled", "disabled");
-  $(".loading-spin").show();
+  jQuery(".loading-spin").show();
   var cities = filter.val();
 
-  $.ajax({
+  jQuery.ajax({
     type: "POST",
     dataType: "html",
     url: the_ajax_script.ajaxurl,
@@ -24,14 +24,14 @@ function getProperties() {
       action: "get_proporties_ajax"
     },
     success: function(data) {
-      $(".properties-list").html(data);
+      jQuery(".properties-list").html(data);
       filter.prop("disabled", false);
-      $(".loading-spin").hide();
+      jQuery(".loading-spin").hide();
     },
     error: function(jqXHR, textStatus, errorThrown) {
       $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
       filter.prop("disabled", false);
-      $(".loading-spin").hide();
+      jQuery(".loading-spin").hide();
     }
   });
 }
