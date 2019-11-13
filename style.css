@@ -43,6 +43,14 @@ body {
     color: #343940
 }
 
+.filter .filter-body {
+    display: none;
+}
+
+.filter.active .filter-body {
+    display: flex;
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav a {
         padding-right: .5rem;
