@@ -9,8 +9,6 @@
             <?php the_content() ?>
         
         <?php endwhile;
-    else :
-        echo '<p>There are no posts!</p>';
     endif;
     
     get_footer();
