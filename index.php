@@ -27,8 +27,14 @@
     <div class="loading-spin mb-2">
         <i class="fas fa-spinner fa-spin"></i>
     </div>
-    <div class="row text-center properties-list posts-list-wrapper" data-ptype="properties">
+    <div class="row text-center properties-list">
     </div>
 </div>
+
+<script>
+    (function($) {
+        getProperties();
+    })(jQuery);
+</script>
 
 <?php get_footer()?>
