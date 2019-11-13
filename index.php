@@ -32,10 +32,7 @@
 </div>
 
 <script>
-(function () {
-    console.log(123);
     getProperties();
-});
 </script>
 
 <?php get_footer()?>
