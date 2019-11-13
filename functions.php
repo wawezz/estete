@@ -87,9 +87,47 @@ function custom_excerpt_length() {
     return 20;
 }
 
+function get_proporties_ajax() {
+  
+    $cities = (isset($_POST["cities"])) ? $_POST["cities"] : array();
+    $tax = array();
+  
+    if(!empty($cities)){
+        foreach($cities as $city){
+            $tax[] = array(
+                'taxonomy' => 'cities',
+                'field' => 'slug',
+                'terms' => $city,
+            );
+        }
+    }
+
+    header("Content-Type: text/html");
+  
+    $args = array(
+        'post_type'=> 'properties',
+        'tax_query' => $tax,
+        'orderby'        => 'name',
+        'order'    => 'ASC',
+        'posts_per_page' => -1       
+        );              
+
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()) : 
+        while ($the_query->have_posts()) : 
+            $the_query->the_post();
+
+            get_template_part('components/loop', 'property');
+        endwhile;
+    endif;
+    wp_reset_postdata();
+}
+
 add_action('init', 'add_custom_post_types_and_taxonomies');
 add_action('wp_enqueue_scripts', 'custom_theme_assets');
 add_action('after_setup_theme', 'after_setup');
 add_filter('excerpt_length', 'custom_excerpt_length');
+add_action('wp_ajax_nopriv_get_proporties_ajax', 'get_proporties_ajax');
+add_action('wp_ajax_get_proporties_ajax', 'get_proporties_ajax');
 
 add_theme_support('post-thumbnails'); 
