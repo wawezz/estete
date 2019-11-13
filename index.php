@@ -1,8 +1,8 @@
 <?php get_header() ?>
 <div class="container p-3">
     <header class="jumbotron my-4">
-        <h1 class="display-3"><?php __('A Warm Welcome!', 'estete-theme')?></h1>
-        <p class="lead"><?php __('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.', 'estete-theme')?></p>
+        <h1 class="display-3"><?php _e('A Warm Welcome!', 'estete-theme')?></h1>
+        <p class="lead"><?php _e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.', 'estete-theme')?></p>
     </header>
     <div class="row text-center">
         <?php 
