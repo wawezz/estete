@@ -23,7 +23,7 @@
                         <?php if (has_post_thumbnail()) :
                             the_post_thumbnail('medium');
                         else :
-                            echo '<img src="'.get_template_directory_uri().'/images/no-image.png" />';
+                            echo '<img src="'.get_template_directory_uri().'/images/no-image.png" class="wp-post-image" />';
                         endif; ?>
                         <div class="card-body">
                             <h4 class="card-title"><?php the_title()?></h4>
