@@ -24,7 +24,9 @@
             </div>
         </div>
     </div>
-    <i class="fas fa-spinner fa-spin loading-spin mb-2"></i>
+    <div class="loading-spin mb-2">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
     <div class="row text-center properties-list">
     </div>
 </div>
