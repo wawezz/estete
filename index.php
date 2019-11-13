@@ -5,6 +5,9 @@
         <p class="lead"><?php _e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.', 'estete-theme')?></p>
     </header>
     <div class="row text-center">
+        <div class="filter">
+            <i class="fas fa-filter"></i>
+        </div>
         <?php 
         $args = array(
             'post_type'=> 'properties',
