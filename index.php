@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div class="container">
+<div class="container p-3">
     <?php if ( have_posts() ) :
         while ( have_posts() ) : the_post(); ?>
     
@@ -11,5 +11,4 @@
         echo '<p>There are no posts!</p>';
     endif; ?>
 </div>
-<?php get_footer(); ?>
-</div>
+<?php get_footer(); ?>>
